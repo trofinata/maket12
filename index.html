@@ -18,7 +18,10 @@
 				</ul>
 				<ul class="personal-list">
 					<li class="personal-item">Личный кабинет пользователя</li>
-					<li class="personal-item">Поиск</li>
+					<li class="personal-item">
+						<label for="search">Поиск</label>
+						<input type="search" id="search">
+					</li>
 					<li class="personal-item">Корзина</li>
 				</ul>
 			</nav>
@@ -106,19 +109,31 @@
 				Перейти в каталог
 			</section>
 			<section class="form">
-				<h2 class="visually-hidden">Форма вступления в клуб</h2>
-				<p>Вступай в клуб и получай специальные привилегии</p>
-				<p>Введите ваши данные и наш менеджер свяжется с вами в ближайшее время</p>
-				Введите ваше имя
-				Имя
-				 Введите ваш телефон
-				Телефон
-				 Введите ваш e-mail
-				E-mail
-				<p>Выберите ваш стаж вождения:</p>
-				До 1 года   До 5 лет  более 5 лет
-				Я даю согласие на обработку моих персональных данных
-				Подать заявку
+				<form action="#" method="POST">
+					<h2 class="visually-hidden">Форма вступления в клуб</h2>
+					<p>Вступай в клуб и получай специальные привилегии</p>
+					<fieldset>
+						<legend>Введите ваши данные и наш менеджер свяжется с вами в ближайшее время</legend>
+						<label for="name">Введите ваше имя</label>
+						<input type="text" name="name" id="name" placeholder="Имя">
+						<label for="tel">Введите ваш телефон</label>
+						<input type="phone" name="tel" id="tel" placeholder="Телефон">
+						<label for="email">Введите ваш e-mail</label>
+						<input type="email" name="email" id="email" placeholder="E-mail">
+					</fieldset>
+					<fieldset>
+						<legend>Выберите ваш стаж вождения:</legend>
+						<input type="radio" id="1year" name="exp" value="1">
+						<label for="1year">До 1 года</label>
+						<input type="radio" id="5year" name="exp" value="2" checked>
+						<label for="5year">До 5 лет</label>
+						<input type="radio" id="more5year" name="exp" value="3">
+						<label for="more5year">более 5 лет</label>
+					</fieldset>
+					<input type="checkbox" id="agree" checked>
+					<label for="agree">Я даю согласие на обработку моих персональных данных</label>
+					<button type="submit">Подать заявку</button>
+				</form>
 			</section>
 		</main>
 		<footer class="main-footer">

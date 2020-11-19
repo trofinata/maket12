@@ -18,7 +18,10 @@
 				</ul>
 				<ul class="personal-list">
 					<li class="personal-item">Личный кабинет пользователя</li>
-					<li class="personal-item">Поиск</li>
+					<li class="personal-item">
+						<label for="search">Поиск</label>
+						<input type="search" id="search">
+					</li>
 					<li class="personal-item">Корзина</li>
 				</ul>			
 			</nav>
@@ -27,33 +30,68 @@
 			<h1 class="visually-hidden">Выбор велосипеда</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2>
-				Цена
-				Цена за велосипед, от
-				28000
-				 Цена за велосипед, до
-				180000
-				 Электровелосипед
-				Да   Нет
-				Материал рамы
-				Сталь   Карбон
-				Цвет
-				Чёрный   Коричневый   Красный   Голубой   Хаки
-				Колёса
-				20”   22”   24”   26”
-				Показать Сбросить фильтры
+				<form action="#" method="POST">	
+					<fieldset>			
+						<legend>Цена</legend>
+						<label for="min_price">Цена за велосипед, от</label>
+						<input type="text" name="min_price" id="min_price" placeholder="28000">
+						<label for="max_price">Цена за велосипед, до</label>
+						<input type="text" name="max_price" id="max_price" placeholder="180000">
+					</fieldset>
+					<fieldset>
+						<legend>Электровелосипед</legend>
+						<label for="electro_yes">Да</label>
+						<input type="checkbox" name="electro" value="Да" id="electro_yes">   
+						<label for="electro_no">Нет</label>
+						<input type="checkbox" name="electro" value="Нет" id="electro_no">
+					</fieldset>
+					<fieldset>
+						<legend>Материал рамы</legend>
+						<label for="steel">Сталь</label>
+						<input type="checkbox" name="material" value="Сталь" id="steel" checked>   
+						<label for="carbon">Карбон</label>
+						<input type="checkbox" name="material" value="Карбон" id="carbon">
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
+						<label for="black">Чёрный</label>
+						<input type="checkbox" name="color" value="черный" id="black">   
+						<label for="brown">Коричневый</label>
+						<input type="checkbox" name="color" value="коричневый" id="brown">   
+						<label for="red">Красный</label>
+						<input type="checkbox" name="color" value="красный" id="red">   
+						<label for="blue">Голубой</label>
+						<input type="checkbox" name="color" value="голубой" id="blue">   
+						<label for="khaki">Хаки</label>
+						<input type="checkbox" name="color" value="хаки" id="khaki">
+					</fieldset>
+					<fieldset>
+						<legend>Колёса</legend>
+						<label for="20">20”</label>
+						<input type="checkbox" name="wheel" value="20" id="20">
+						<label for="22">22”</label>
+						<input type="checkbox" name="wheel" value="22" id="22">
+						<label for="24">24”</label>
+						<input type="checkbox" name="wheel" value="24" id="24">
+						<label for="26">26”</label>
+						<input type="checkbox" name="wheel" value="26" id="26">
+					</fieldset>
+					<button type="button">Показать</button>
+					<input tgype="reset" value="Сбросить фильтры">
+				</form>
 			</section>
 			<section class="sort">
 				<h2 class="visually-hidden">Сортировка карточек</h2>
-				По популярности
+				<a href="#">По популярности</a>
 				<p>Показывать по:</p>
 				<ul class="sort-list">
-					<li class="sort-item">9</li>
-					<li class="sort-item">24</li>
-					<li class="sort-item">все</li>
+					<li class="sort-item"><a href="#">9</a></li>
+					<li class="sort-item"><a href="#">24</a></li>
+					<li class="sort-item"><a href="#">все</a></li>
 				</ul>
 				<ul class="show-list">
-					<li class="show-item">Отобразить в столбик</li>
-					<li class="show-item">Отобразить карточками</li>
+					<li class="show-item"><a href="#">Отобразить в столбик</a></li>
+					<li class="show-item"><a href="#">Отобразить карточками</a></li>
 				</ul>
 			</section>
 			<section class="catalog">
