@@ -7,10 +7,10 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="site-nav">
-				<a href="#">
-					<img src="img/logo.svg" alt="Логотип" width="100" height="50">
-				</a>
+			<a href="#">
+				<img src="img/logo.svg" alt="Логотип" width="184" height="30">
+			</a>
+			<nav class="site-nav">				
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a href="#">Велосипеды</a>
@@ -31,18 +31,9 @@
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
-				<ul class="personal-list">
-					<li class="personal-item">
-						<a href="#">Личный кабинет пользователя</a>
-					</li>
-					<li class="personal-item">
-						<label for="search">Поиск</label>
-						<input type="search" id="search">
-					</li>
-					<li class="personal-item">
-						<a href="#">Корзина</a>
-					</li>
-				</ul>
+				<a href="#">Личный кабинет пользователя</a>					
+				<a href="#">Поиск</a>				
+				<a href="#">Корзина</a>					
 			</nav>
 		</header>
 		<main>
@@ -50,6 +41,7 @@
 			<section class="promo">
 				<h2 class="visually-hidden">Промо-слайд с переходом в магазин</h2>
 				<p>Велосипеды с твоим характером</p>
+				<img src="img/main-slider-pic.jpg" alt="Фото" width="1366" height="768">
 				<a href="#">В магазин</a>
 				<ul class="social-list">
 					<li class="social-item">
@@ -63,119 +55,117 @@
 					</li>
 				</ul>
 			</section>
-			<section class="goods">
+			<article class="goods">
 				<h2 class="visually-hidden">Товары магазина</h2>
 				<p>У нас более 200 моделей прогулочных велосипедов для настоящих мужчин</p>
 				<p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5. Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привилегий от партнеров.</p>
 				<ul class="goods-list">
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-26.png" alt="Фото1" width="224" height="160">
-						<h3>
-							<a href="#">Peuzer Kropper Apocalypse</a>
-						</h3>
-						<p>24”, сталь Hi-Ten</p>
-						<p>Венгрия</p>
-						<p>75 000 ₽</p>
+						<a href="#">
+							<h3>Peuzer Kropper Apocalypse</h3>
+							<img src="img/pocalypse-fekete-26.png" alt="Фото1" width="224" height="160">				
+							<p>24”, сталь Hi-Ten</p>
+							<p>Венгрия</p>
+							<p>75 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-12.png" alt="Фото2" width="224" height="160">
-						<h3>
-							<a href="#">Schwimm Stingold Oss</a>
-						</h3>
-						<p>20”+24”, сталь</p>
-						<p>США</p>
-						<p>34 000 ₽</p>
+						<a href="#">
+							<h3>Schwimm Stingold Oss</h3>
+							<img src="img/pocalypse-fekete-13.png" alt="Фото2" width="224" height="160">				
+							<p>20”+24”, сталь</p>
+							<p>США</p>
+							<p>34 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-37.png" alt="Фото3" width="224" height="160">
-						<h3>
-							<a href="#">Darley Ravidson</a>
-						</h3>
-						<p>20”, сталь</p>
-						<p>Китай</p>
-						<p>23 000 ₽</p>
+						<a href="#">
+							<h3>Darley Ravidson</h3>
+							<img src="img/pocalypse-fekete-12.png" alt="Фото3" width="224" height="160">				
+							<p>20”, сталь</p>
+							<p>Китай</p>
+							<p>23 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 				</ul>
 				<a href="#">Все велосипеды</a>
-			</section>
-			<section class="workshop">
-				<img src="img/workshop_pic.jpg" alt="Фото" width="462" height="358">
+			</article>
+			<section class="workshop">				
 				<h2>Мастерская</h2>
+				<img src="img/workshop_pic.jpg" alt="Фото" width="462" height="358">
 				<p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.</p>
 				<p>Возможен выезд по вашему адресу. Для велосипедов, купленных у нас, обслуживание предоставляется бесплатно.</p>
 				<a href="#">Подробнее</a>
 			</section>
-			<section class="spares">
+			<article class="spares">
 				<h2>Запчасти и аксессуары</h2>
 				<p>Всегда большой выбор запчастей и аксессуаров для чоппер-байков. Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
 				<ul class="spares-list">
 					<li class="spares-item">
-						<img src="img/pocalypse-fekete.png" alt="Фото" width="224" height="160">
-						<h3>
-							<a href="#">Седло G-Soul</a>
-						</h3>
-						<p>натуральная кожа</p>
-						<p>доступно в 3 цветах</p>
-						<p>3200 ₽</p>
+						<a href="#">						
+							<h3>Седло G-Soul</h3>
+							<img src="img/pocalypse-fekete.png" alt="Фото" width="224" height="160">
+							<p>натуральная кожа</p>
+							<p>доступно в 3 цветах</p>
+							<p>3200 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="spares-item">
-						<img src="img/boothill-bike-large-chrome.png" alt="Фото" width="224" height="160">
-						<h3>
-							<a href="#">Сумка на руль Cropalm</a>
-						</h3>
-						<p>15х10х5 cm</p>
-						<p>натуральная кожа</p>
-						<p>1800 ₽</p>
+						<a href="#">						
+							<h3>Сумка на руль Cropalm</h3>
+							<img src="img/boothill-bike-large-chrome.png" alt="Фото" width="224" height="160">
+							<p>15х10х5 cm</p>
+							<p>натуральная кожа</p>
+							<p>1800 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="spares-item">
-						<img src="img/inch-chopper-bike-2.png" alt="Фото" width="224" height="160">
-						<h3>
-							<a href="#">Седло Darley B36 q</a>
-						</h3>
-						<p>натуральная кожа</p>
-						<p>доступно в 3 цветах</p>
-						<p>8625 ₽</p>
+						<a href="#">						
+							<h3>Седло Darley B36 q</h3>
+							<img src="img/inch-chopper-bike-2.png" alt="Фото" width="224" height="160">
+							<p>натуральная кожа</p>
+							<p>доступно в 3 цветах</p>
+							<p>8625 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="spares-item">
-						<img src="img/inch-chopper-bike.png" alt="Фото" width="224" height="160">
-						<h3>
-							<a href="#">Звезды Schrima</a>
-						</h3>
-						<p>высокопрочный</p>
-						<p>титановый сплав</p>
-						<p>16780 ₽</p>
+						<a href="#">						
+							<h3>Звезды Schrima</h3>
+							<img src="img/inch-chopper-bike.png" alt="Фото" width="224" height="160">
+							<p>высокопрочный<br>
+							титановый сплав</p>
+							<p>16780 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 				</ul>
 				<a href="#">Перейти в каталог</a>
-			</section>
+			</article>
 			<section class="form">
-				<form action="#" method="POST">
-					<h2 class="visually-hidden">Форма вступления в клуб</h2>
-					<p>Вступай в клуб и получай специальные привилегии</p>
+				<h2 class="visually-hidden">Форма вступления в клуб</h2>
+				<p>Вступай в клуб и получай специальные привилегии</p>
+				<p>Введите ваши данные и наш менеджер свяжется с вами в ближайшее время</p>
+				<form action="#" method="POST">											
+					<label for="name">Введите ваше имя</label>
+					<input type="text" name="name" id="name" placeholder="Имя">
+					<label for="tel">Введите ваш телефон</label>
+					<input type="tel" name="tel" id="tel" placeholder="Телефон">
+					<label for="email">Введите ваш e-mail</label>
+					<input type="email" name="email" id="email" placeholder="E-mail">					
 					<fieldset>
-						<legend>Введите ваши данные и наш менеджер свяжется с вами в ближайшее время</legend>
-						<label for="name">Введите ваше имя</label>
-						<input type="text" name="name" id="name" placeholder="Имя">
-						<label for="tel">Введите ваш телефон</label>
-						<input type="phone" name="tel" id="tel" placeholder="Телефон">
-						<label for="email">Введите ваш e-mail</label>
-						<input type="email" name="email" id="email" placeholder="E-mail">
-					</fieldset>
-					<fieldset>
-						<legend>Выберите ваш стаж вождения:</legend>
-						<input type="radio" id="1year" name="exp" value="1">
+						<legend>Выберите ваш стаж вождения:</legend>						
 						<label for="1year">До 1 года</label>
-						<input type="radio" id="5year" name="exp" value="2" checked>
+						<input type="radio" id="1year" name="exp" value="1">
 						<label for="5year">До 5 лет</label>
-						<input type="radio" id="more5year" name="exp" value="3">
+						<input type="radio" id="5year" name="exp" value="2">
 						<label for="more5year">более 5 лет</label>
+						<input type="radio" id="more5year" name="exp" value="3">						
 					</fieldset>
 					<input type="checkbox" id="agree" checked>
 					<label for="agree">Я даю согласие на обработку моих персональных данных</label>
@@ -199,13 +189,19 @@
 					<a href="#">Мастерская</a>
 				</li>
 				<li class="nav-item">
+					<a href="#">Тест-драйв</a>
+				</li>
+				<li class="nav-item">
 					<a href="#">Доставка и оплата</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">Контакты</a>
+					<a href="#">Рассрочка</a>
+				</li>
+				<li class="nav-item">
+					<a href="#">Вступление в клуб</a>
 				</li>
 			</ul>
-			<img src="img/logo-footer.svg" alt="Логотип" width="100" height="50">
+			<a href="#"><img src="img/logo-footer.svg" alt="Логотип" width="184" height="29"></a>
 			<ul class="social-list">
 				<li class="social-item">
 					<a href="#">Вконтакте</a>
@@ -218,7 +214,7 @@
 				</li>
 			</ul>
 			<p>©2018</p>
-			<p><a href="#">Политика конфиденциальности</a></p>
+			<a href="#">Политика конфиденциальности</a>
 		</footer>
 	</body>
 </html>

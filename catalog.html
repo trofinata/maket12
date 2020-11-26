@@ -7,10 +7,10 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="site-nav">
-				<a href="#">
-					<img src="img/logo.svg" alt="Логотип" width="100" height="50">
-				</a>
+			<a href="#">
+				<img src="img/logo.svg" alt="Логотип" width="184" height="30">
+			</a>
+			<nav class="site-nav">				
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a href="#">Велосипеды</a>
@@ -30,19 +30,10 @@
 					<li class="nav-item">
 						<a href="#">Контакты</a>
 					</li>
-				</ul>
-				<ul class="personal-list">
-					<li class="personal-item">
-						<a href="#">Личный кабинет пользователя</a>
-					</li>
-					<li class="personal-item">
-						<label for="search">Поиск</label>
-						<input type="search" id="search">
-					</li>
-					<li class="personal-item">
-						<a href="#">Корзина</a>
-					</li>
-				</ul>
+				</ul>			
+				<a href="#">Личный кабинет пользователя</a>				
+				<a href="#">Поиск</a>					
+				<a href="#">Корзина</a>				
 			</nav>
 		</header>
 		<main>
@@ -96,7 +87,8 @@
 						<input type="checkbox" name="wheel" value="26" id="26">
 					</fieldset>
 					<button type="button">Показать</button>
-					<input tgype="reset" value="Сбросить фильтры">
+					<button type="reset" value="Сбросить фильтры" id="reset">Сбросить фильтры</button>
+					<label for="reset"></label>
 				</form>
 			</section>
 			<section class="sort">
@@ -109,113 +101,112 @@
 					<li class="sort-item"><a href="#">все</a></li>
 				</ul>
 				<ul class="show-list">
-					<li class="show-item"><a href="#">Отобразить в столбик</a></li>
-					<li class="show-item"><a href="#">Отобразить карточками</a></li>
-				</ul>
-			</section>
-			<section class="catalog">
+					<li class="show-item"><button type="button">Отобразить в столбик</button></li>
+					<li class="show-item"><button type="button">>Отобразить карточками</button></li>
+				</ul>					
 				<ul class="goods-list">
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-26.png" alt="Фото1" width="224" height="160">
-						<h3>
-							<a href="#">Peuzer Kropper Apocalypse</a>
-						</h3>
-						<p>24”, сталь Hi-Ten</p>
-						<p>Венгрия</p>
-						<p>75 000 ₽</p>
-						<p><ins>90 000 ₽</ins></p>
+						<a href="#">
+							<h3>Peuzer kropper Apocalypse</h3>
+							<img src="img/pocalypse-fekete-26.png" alt="Фото1" width="224" height="160">				
+							<p>24”, сталь Hi-Ten</p>
+							<p>Венгрия</p>
+							<p>75 000 ₽</p>
+							<del>90 000 ₽</del>
+						</a>
+							<button type="button">В корзину</button>
+					</li>
+					<li class="goods-item">
+						<a href="#">
+							<h3>Schwimm Stingold Oss</h3>
+							<img src="img/pocalypse-fekete-13.png" alt="Фото2" width="224" height="160">				
+							<p>20”+24”, сталь</p>
+							<p>США</p>
+							<p>34 000 ₽</p>
+							<del>40 800 ₽</del>
+							<span>-20%</span>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-13.png" alt="Фото2" width="224" height="160">
-						<h3>
-							<a href="#">Schwimm Stingold Oss</a>
-						</h3>
-						<p>20”+24”, сталь</p>
-						<p>США</p>
-						<p>34 000 ₽</p>
-						<p><ins>40 800 ₽</ins></p>
-						<p>-20%</p>
+						<a href="#">
+							<h3>Darley Ravidson</h3>
+							<img src="img/pocalypse-fekete-12.png" alt="Фото3" width="224" height="160">				
+							<p>20”, сталь</p>
+							<p>Китай</p>
+							<p>23 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-12.png" alt="Фото3" width="224" height="160">
-						<h3>
-							<a href="#">Darley Ravidson</a>
-						</h3>
-						<p>20”, сталь</p>
-						<p>Китай</p>
-						<p>23 000 ₽</p>
+						<a href="#">
+							<h3>Miracle Cyclone Electro</h3>
+							<img src="img/pocalypse-fekete-37.png" alt="Фото4" width="224" height="160">				
+							<p>26”, 500W, 5 скоростей, сталь</p>
+							<p>США</p>
+							<p>154 000 ₽</p>
+							<del>184 800 ₽</del>
+							<span>-20%</span>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-37.png" alt="Фото4" width="224" height="160">
-						<h3>
-							<a href="#">Miracle Cyclone Electro</a>
-						</h3>
-						<p>26”, 500W, 5 скоростей, сталь</p>
-						<p>США</p>
-						<p>154 000 ₽</p>
-						<p><ins>184 800 ₽</ins></p>
-						<p>-20%</p>
+						<a href="#">
+							<h3>X-back Rainmobile</h3>
+							<img src="img/pocalypse-fekete-28.png" alt="Фото5" width="224" height="160">				
+							<p>24”, сталь</p>
+							<p>Китай</p>
+							<p>42 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-28.png" alt="Фото5" width="224" height="160">
-						<h3>
-							<a href="#">X-back Rainmobile</a>
-						</h3>
-						<p>24”, сталь</p>
-						<p>Китай</p>
-						<p>42 000 ₽</p>
+						<a href="#">
+							<h3>Peuzer Kropper Apocalypse</h3>
+							<img src="img/pocalypse-fekete-26.png" alt="Фото6" width="224" height="160">				
+							<p>20”, сталь</p>
+							<p>Китай</p>
+							<p>23 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-26.png" alt="Фото6" width="224" height="160">
-						<h3>
-							<a href="#">Peuzer Kropper Apocalypse</a>
-						</h3>
-						<p>20”, сталь</p>
-						<p>Китай</p>
-						<p>23 000 ₽</p>
+						<a href="#">
+							<h3>Peuzer Kropper Apocalypse</h3>
+							<img src="img/pocalypse-fekete-26.png" alt="Фото7" width="224" height="160">				
+							<p>24”, сталь Hi-Ten</p>
+							<p>Венгрия</p>
+							<p>75 000 ₽</p>
+							<del>90 000 ₽</del>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-26.png" alt="Фото7" width="224" height="160">
-						<h3>
-							<a href="#">Peuzer Kropper Apocalypse</a>
-						</h3>
-						<p>24”, сталь Hi-Ten</p>
-						<p>Венгрия</p>
-						<p>75 000 ₽</p>
-						<p><ins>90 000 ₽</ins></p>
+						<a href="#">
+							<h3>Best4You Copter</h3>
+							<img src="img/pocalypse-fekete-73.png" alt="Фото8" width="224" height="160">				
+							<p>20”+24”, сталь</p>
+							<p>США</p>
+							<p>34 000 ₽</p>
+							<del>47 600 ₽</del>
+							<span>-40%</span>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 					<li class="goods-item">
-						<img src="img/pocalypse-fekete-73.png" alt="Фото8" width="224" height="160">
-						<h3>
-							<a href="#">Best4You Copter</a>
-						</h3>
-						<p>20”+24”, сталь</p>
-						<p>США</p>
-						<p>34 000 ₽</p>
-						<p><ins>47 600 ₽</ins></p>
-						<p>-40%</p>
-						<button type="button">В корзину</button>
-					</li>
-					<li class="goods-item">
-						<img src="img/pocalypse-fekete-69.png" alt="Фото9" width="224" height="160">
-						<h3>
-							<a href="#">Darley Ravidson</h3>
-						<p>20”, сталь</p>
-						<p>Китай</p>
-						<p>23 000 ₽</p>
+						<a href="#">
+							<h3>Darley Ravidson</h3>
+							<img src="img/pocalypse-fekete-69.png" alt="Фото9" width="224" height="160">				
+							<p>20”, сталь</p>
+							<p>Китай</p>
+							<p>23 000 ₽</p>
+						</a>
 						<button type="button">В корзину</button>
 					</li>
 				</ul>
 				<ul class="catalog-pagination-list">
 					<li class="catalog-pagination-item">
-						<a href="#"><</a>
+						<a href="#">&#60;</a>
 					</li>
 					<li class="catalog-pagination-item">
 						<a href="#">1</a>
@@ -227,16 +218,16 @@
 						<a href="#">3</a>
 					</li>
 					<li class="catalog-pagination-item">
-						<a href="#">...</a>
+						...
 					</li>
 					<li class="catalog-pagination-item">
 						<a href="#">26</a>
 					</li>
 					<li class="catalog-pagination-item">
-						<a href="#">></a>
+						<a href="#">&gt;</a>
 					</li>
-				</ul>
-			</section>
+				</ul>	
+			</section>		
 		</main>
 		<footer class="main-footer">
 			<ul class="nav-list">
@@ -253,13 +244,19 @@
 					<a href="#">Мастерская</a>
 				</li>
 				<li class="nav-item">
+					<a href="#">Тест-драйв</a>
+				</li>
+				<li class="nav-item">
 					<a href="#">Доставка и оплата</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">Контакты</a>
+					<a href="#">Рассрочка</a>
+				</li>
+				<li class="nav-item">
+					<a href="#">Вступление в клуб</a>
 				</li>
 			</ul>
-			<img src="img/logo-footer.svg" alt="Логотип" width="100" height="50">
+			<a href="#"><img src="img/logo-footer.svg" alt="Логотип" width="184" height="29"></a>
 			<ul class="social-list">
 				<li class="social-item">
 					<a href="#">Вконтакте</a>
@@ -272,7 +269,7 @@
 				</li>
 			</ul>
 			<p>©2018</p>
-			<p><a href="#">Политика конфиденциальности</a></p>
+			<a href="#">Политика конфиденциальности</a>
 		</footer>
 	</body>
 </html>
